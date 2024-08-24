@@ -65,4 +65,5 @@ public class BoardDao {
 		String sql = "delete from board where num=?";
 		temp.update(sql, num);
 	}
+
 }

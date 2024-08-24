@@ -25,8 +25,6 @@
 			txt += "content:"+obj.content+"<br/>";
 			res.innerHTML = txt;
 		}
-		
-	
 		//open()로 요청 설정
 		req.open('get', '/board/getAjax?num='+num);
 		
@@ -37,12 +35,13 @@
 		let res = document.getElementById("res");
 		res.innerHTML = '';
 	}
+
 </script>
 </head>
 <body>
 <h3>게시판</h3>
-<span id="res" style="position:absolute;top:100px;left:300px"></span>
-<a href="">오늘 읽은 글목록</a><br/>
+<span id="res" style="position:absolute;top:100px;left:400px 	"></span>
+<a href="/board/todaylist">오늘 읽은 글목록</a><br/>
 <a href="/board/add">글작성</a><br/>
 <select name="gettype">
 	<option>작성자</option>
